@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Na Handel Danymi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="https://formspree.io/wac.lukasz@gmail.com" method="post" id="lista">
+
+        <p>Formularz</p>
+
+        <label for="imie">Imię</label>
+        <input type="text" placeholder="Wpsiz swoje imię" id="imie" name="Imię">
+
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" placeholder="Wpisz swoje nazwisko" id="nazwisko" name="Nazwisko">
+
+        <label for="email">Adres e-mail</label>
+        <input type="email" placeholder="Wpisz swoj adres e-mail" id="email" name="e-mail">
+
+        <label for="tel">Nr Telefonu</label>
+        <input type="text" placeholder="Wpisz swoj numer telefonu" maxlength="9" id="tel" name="Tel:">
+
+
+        <label for="pola">Wybierz swoje miasto:</label>
+        <select id="pola" name="Wybrane miasto" required form="lista">
+            <option disabled selected>Wybierz</option>
+            <option value="Krakow">Krakow</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="zabrze">Zabrze</option>   
+         </select>
+
+
+        <article id="obszar-pola-wyboru">
+
+            <h3>Wybierz płeć</h3>
+            <ul id="pole-wyboru">
+
+
+                <li>
+                    <label for="mezczyzna">Mężczyzna</label>
+                    <input type="radio" name="plec" value="Mężczyzna" id="mezczyzna" checked>
+                </li>
+
+                <li>
+                    <label for="kobieta">Kobieta</label>
+                    <input type="radio" name="plec" value="Kobieta" id="kobieta">
+                </li>
+
+                <li>
+                    <label for="inne">Inne</label>
+                    <input type="radio" name="plec" value="Inne" id="inne">
+                </li>
+
+            </ul>
+        </article>
+
+        <br>
+
+        <textarea placeholder="Wpisz swoją wiadomość" wrap="soft"></textarea>
+
+        <label id="zgoda"><input type="checkbox">Wyrażam zgodę na przetwarzanie danych osobowych itd. </label>
+
+        <br>
+        <input type="submit" title="Prześlij Formularz" id="button-submit">
+        <br>
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>

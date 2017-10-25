@@ -1,0 +1,129 @@
+/* --- formatowanie całego bloku formularza FORM --- */
+
+form {
+    position: relative;
+    left: 30vw;
+    top: 4vh;
+    border: solid rgba(0, 0, 0, 0.33) 1px;
+    border-radius: 2%;
+    border-top-left-radius: 45px;
+    padding: 3%;
+    background-color: rgba(234, 234, 234, 0.17);
+    width: 40vw;
+    text-align: center;
+
+}
+
+form > p {
+    font-size: 24px;
+    margin-top: -15px;
+    color: #555555;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+}
+
+input:hover {
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+
+/* --- Fomratowanie FORM - END --- */
+
+/*wyświetlanie etykiet w FORM, w przypadku braku wszytkie elementy będą traktowane jako liniowe */
+
+form > label {
+    display: block;
+    margin: 4px;
+}
+
+/* -- END -- */
+
+/* POLA TEKSTOWE - Wszystkie pola tekstowe do wprowadzania danych */
+
+form > input {
+    color: #383838;
+    text-transform: uppercase;
+    width: 90%;
+    height: 25px;
+    margin: 7px;
+    text-align: center;
+    border: solid rgba(0, 0, 0, 0.29) 1px;
+    border-radius: 5px;
+
+}
+
+/* == POLA TEKSTOWE -- END -- */
+
+/* --- Podświetlenie boxow w formularzu */
+
+form > input:focus {
+    background-color: rgba(92, 242, 255, 0.13);
+}
+
+/*podświetlenie END */
+
+#pola {
+    margin: 10px;
+}
+
+#obszar-pola-wyboru {
+    display: inline-block;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.21);
+    border-width: 1px;
+    border-radius: 10px;
+    width: 90%;  
+    margin: 3%;
+    
+}
+
+#pole-wyboru li {
+    text-align: center;
+    display: inline;
+    padding: 5px;
+}
+
+
+
+textarea {
+    width: 90%;
+    height: 15ex;
+    border: solid #adadad 1px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+textarea:hover {
+    background-color: white;
+    transition: 0.7s;
+
+}
+
+textarea:focus {
+    background-color: white;
+}
+
+#button-submit {
+    text-align: center;
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.11);
+    text-transform: none;
+    border: solid 1px #d1d1d1;
+    border-radius: 7px;
+}
+
+#button-submit:hover {
+    background-color: rgba(7, 204, 30, 0.29);
+    transition: 0.4s;
+     color: white;
+}
+#zgoda {
+    border-radius: 20px;
+}
+#zgoda:hover, input {
+    background-color: rgba(230, 230, 230, 0.32);
+    transition: 0.3s;
+}
