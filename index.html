@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Na Handel Danymi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 </head>
 
 <body>
@@ -14,16 +15,16 @@
         <p>Formularz</p>
 
         <label for="imie">Imię</label>
-        <input type="text" placeholder="Wpsiz swoje imię" id="imie" name="Imię">
+        <input type="text" placeholder="WPISZ SWOJE IMIĘ" id="imie" name="Imię">
 
         <label for="nazwisko">Nazwisko</label>
-        <input type="text" placeholder="Wpisz swoje nazwisko" id="nazwisko" name="Nazwisko">
+        <input type="text" placeholder="WPISZ SWOJE NAZWISKO" id="nazwisko" name="Nazwisko">
 
         <label for="email">Adres e-mail</label>
-        <input type="email" placeholder="Wpisz swoj adres e-mail" id="email" name="e-mail">
+        <input type="email" placeholder="PODAJ SWOJ ADRES EMAIL" id="email" name="E-mail">
 
         <label for="tel">Nr Telefonu</label>
-        <input type="text" placeholder="Wpisz swoj numer telefonu" maxlength="9" id="tel" name="Tel:">
+        <input type="text" placeholder="WPISZ SWOJ NUMER TELEFONU" maxlength="9" id="tel" name="Tel:">
 
 
         <label for="pola">Wybierz swoje miasto:</label>
@@ -43,17 +44,17 @@
 
                 <li>
                     <label for="mezczyzna">Mężczyzna</label>
-                    <input type="radio" name="plec" value="Mężczyzna" id="mezczyzna" checked>
+                    <input type="radio" name="Płeć" value="Mężczyzna" id="mezczyzna" checked>
                 </li>
 
                 <li>
                     <label for="kobieta">Kobieta</label>
-                    <input type="radio" name="plec" value="Kobieta" id="kobieta">
+                    <input type="radio" name="Płeć" value="Kobieta" id="kobieta">
                 </li>
 
                 <li>
                     <label for="inne">Inne</label>
-                    <input type="radio" name="plec" value="Inne" id="inne">
+                    <input type="radio" name="Płeć" value="Inne" id="inne">
                 </li>
 
             </ul>
@@ -63,7 +64,7 @@
 
         <textarea placeholder="Wpisz swoją wiadomość" wrap="soft" name="Wiadomość"></textarea>
 
-        <label id="zgoda"><input type="checkbox" name="Zgoda">Wyrażam zgodę na przetwarzanie danych osobowych itd. </label>
+        <label id="zgoda"><input type="checkbox" name="Zgoda" required>Wyrażam zgodę na przetwarzanie danych osobowych itd. </label>
 
         <br>
         <input type="submit" title="Prześlij Formularz" id="button-submit">

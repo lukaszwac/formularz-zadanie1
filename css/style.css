@@ -11,6 +11,7 @@ form {
     background-color: rgba(234, 234, 234, 0.17);
     width: 40vw;
     text-align: center;
+    font-family: 'open sans', sans-serif;
 
 }
 
@@ -42,13 +43,15 @@ form > label {
 
 form > input {
     color: #383838;
-    text-transform: uppercase;
+    text-transform: capitalize;
     width: 90%;
     height: 25px;
     margin: 7px;
     text-align: center;
     border: solid rgba(0, 0, 0, 0.29) 1px;
     border-radius: 5px;
+    font-size: 13px;
+    font-family: 'open sans', sans-serif;
 
 }
 
