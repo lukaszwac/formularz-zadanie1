@@ -11,24 +11,24 @@
 <body>
 
     <form action="https://formspree.io/wac.lukasz@gmail.com" method="post" id="lista">
-
+    
         <p>Formularz</p>
 
         <label for="imie">Imię</label>
-        <input type="text" placeholder="WPISZ SWOJE IMIĘ" id="imie" name="Imię">
+        <input type="text" placeholder="WPISZ SWOJE IMIĘ" id="imie" name="Imię" required>
 
         <label for="nazwisko">Nazwisko</label>
-        <input type="text" placeholder="WPISZ SWOJE NAZWISKO" id="nazwisko" name="Nazwisko">
+        <input type="text" placeholder="WPISZ SWOJE NAZWISKO" id="nazwisko" name="Nazwisko" required>
 
         <label for="email">Adres e-mail</label>
-        <input type="email" placeholder="PODAJ SWOJ ADRES EMAIL" id="email" name="E-mail">
+        <input type="email" placeholder="PODAJ SWOJ ADRES EMAIL" id="email" name="E-mail" required> 
 
         <label for="tel">Nr Telefonu</label>
-        <input type="text" placeholder="WPISZ SWOJ NUMER TELEFONU" maxlength="9" id="tel" name="Tel:">
+        <input type="text" placeholder="WPISZ SWOJ NUMER TELEFONU" maxlength="9" id="tel" name="Tel:" required>
 
 
         <label for="pola">Wybierz swoje miasto:</label>
-        <select id="pola" name="Wybrane miasto" required form="lista">
+        <select id="pola" name="Wybrane miasto" form="lista" required>
             <option value="" disabled selected>Wybierz</option>
             <option value="Krakow">Krakow</option>
             <option value="warszawa">Warszawa</option>
@@ -44,7 +44,7 @@
 
                 <li>
                     <label for="mezczyzna">Mężczyzna</label>
-                    <input type="radio" name="Płeć" value="Mężczyzna" id="mezczyzna" checked>
+                    <input type="radio" na me="Płeć" value="Mężczyzna" id="mezczyzna" required>
                 </li>
 
                 <li>
